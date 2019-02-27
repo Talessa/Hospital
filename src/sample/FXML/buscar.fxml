@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="sample.Controllers.BuscarController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar nodeOrientation="LEFT_TO_RIGHT" orientation="VERTICAL" prefHeight="400.0" prefWidth="92.0">
+         <items>
+            <RadioButton fx:id="dni" mnemonicParsing="false" text="DNI">
+               <toggleGroup>
+                  <ToggleGroup fx:id="filtro" />
+               </toggleGroup>
+               <opaqueInsets>
+                  <Insets bottom="4.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Caladea" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="nombre" mnemonicParsing="false" text="Nombre" toggleGroup="$filtro">
+               <opaqueInsets>
+                  <Insets bottom="4.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Caladea" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="apellido" mnemonicParsing="false" text="Apellido" toggleGroup="$filtro">
+               <opaqueInsets>
+                  <Insets bottom="4.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Caladea" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="altura" mnemonicParsing="false" text="Altura" toggleGroup="$filtro">
+               <opaqueInsets>
+                  <Insets bottom="4.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Caladea" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="edad" mnemonicParsing="false" text="Edad" toggleGroup="$filtro">
+               <opaqueInsets>
+                  <Insets bottom="4.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Caladea" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="peso" mnemonicParsing="false" text="Peso" toggleGroup="$filtro">
+               <opaqueInsets>
+                  <Insets bottom="4.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="Caladea" size="14.0" />
+               </font>
+            </RadioButton>
+         </items>
+      </ToolBar>
+      <Button fx:id="buscar" layoutX="100.0" layoutY="300.0" mnemonicParsing="false" text="Buscar">
+         <font>
+            <Font name="Caladea Bold" size="14.0" />
+         </font></Button>
+      <CheckBox fx:id="rango" layoutX="115.0" layoutY="26.0" mnemonicParsing="false" text="Por rango">
+         <font>
+            <Font name="Caladea" size="14.0" />
+         </font></CheckBox>
+      <TextField fx:id="valor1" layoutX="115.0" layoutY="79.0">
+         <font>
+            <Font name="Caladea" size="14.0" />
+         </font></TextField>
+      <Label fx:id="texto" layoutX="115.0" layoutY="53.0" prefHeight="17.0" prefWidth="149.0" text="DNI:">
+         <font>
+            <Font name="Caladea" size="14.0" />
+         </font></Label>
+      <TextField fx:id="valor2" layoutX="115.0" layoutY="119.0">
+         <font>
+            <Font name="Caladea" size="14.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

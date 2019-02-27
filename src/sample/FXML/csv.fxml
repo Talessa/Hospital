@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.CsvController">
+   <children>
+      <TextField fx:id="ruta" layoutX="35.0" layoutY="81.0" prefHeight="25.0" prefWidth="189.0">
+         <font>
+            <Font name="Caladea" size="14.0" />
+         </font></TextField>
+      <Label layoutX="41.0" layoutY="44.0" text="Ruta del archivo CSV">
+         <font>
+            <Font name="Caladea Italic" size="16.0" />
+         </font></Label>
+      <Button fx:id="cargar" layoutX="35.0" layoutY="175.0" mnemonicParsing="false" onAction="#clicCargar" text="Cargar">
+         <font>
+            <Font name="Caladea Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="msn" disable="true" layoutX="35.0" layoutY="130.0" opacity="0.0" prefHeight="17.0" prefWidth="414.0" text="Label" />
+      <Button fx:id="buscar" layoutX="242.0" layoutY="83.0" mnemonicParsing="false" onAction="#clicBuscar" text="Buscar" />
+   </children>
+</AnchorPane>
